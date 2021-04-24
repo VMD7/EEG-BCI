@@ -1,9 +1,8 @@
 from flask import Flask,redirect,render_template,url_for,request,jsonify
 import pandas as pd
 import numpy as np
-import datetime
 import pickle
-import os
+
 
 app = Flask(__name__, template_folder="template")
 with open("Models/best_gbc.pickle", 'rb') as data:
