@@ -5,7 +5,7 @@ import pickle
 
 
 app = Flask(__name__, template_folder="template")
-with open("Models/best_gbc.pickle", 'rb') as data:
+with open("./Models/best_gbc.pickle", 'rb') as data:
     model = pickle.load(data)
 
 @app.route("/",methods=['GET'])
